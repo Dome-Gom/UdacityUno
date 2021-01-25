@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -g  -std=c++17 -pthread   CMakeFiles/Uno.dir/src/bot.cpp.o CMakeFiles/Uno.dir/src/card.cpp.o CMakeFiles/Uno.dir/src/main.cpp.o CMakeFiles/Uno.dir/src/player.cpp.o CMakeFiles/Uno.dir/src/table.cpp.o CMakeFiles/Uno.dir/src/user.cpp.o  -o Uno 

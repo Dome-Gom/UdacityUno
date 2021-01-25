@@ -1,6 +1,8 @@
-#include <iostream>
+#include "table.h"
 
 int main() {
-    std::cout << "Hello World!" << "\n";
+    Table theGame;
+    theGame.RunGame();
+
     return 0;
 }
