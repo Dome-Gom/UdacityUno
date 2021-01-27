@@ -4,7 +4,7 @@
 #include <string>
 
 //Forward declaration
-class Bot;
+class Table;
 
 #include "player.h"
 #include "card.h"

@@ -7,6 +7,7 @@ CMakeFiles/Uno.dir/src/bot.cpp.o
  /home/workspace/CppND-Capstone-Uno/src/card.h
  /home/workspace/CppND-Capstone-Uno/src/player.h
  /home/workspace/CppND-Capstone-Uno/src/table.h
+ /home/workspace/CppND-Capstone-Uno/src/user.h
 CMakeFiles/Uno.dir/src/card.cpp.o
  /home/workspace/CppND-Capstone-Uno/src/card.cpp
  /home/workspace/CppND-Capstone-Uno/src/card.h
@@ -16,13 +17,25 @@ CMakeFiles/Uno.dir/src/main.cpp.o
  /home/workspace/CppND-Capstone-Uno/src/main.cpp
  /home/workspace/CppND-Capstone-Uno/src/player.h
  /home/workspace/CppND-Capstone-Uno/src/table.h
+ /home/workspace/CppND-Capstone-Uno/src/user.h
 CMakeFiles/Uno.dir/src/player.cpp.o
+ /home/workspace/CppND-Capstone-Uno/src/bot.h
+ /home/workspace/CppND-Capstone-Uno/src/card.h
  /home/workspace/CppND-Capstone-Uno/src/player.cpp
+ /home/workspace/CppND-Capstone-Uno/src/player.h
+ /home/workspace/CppND-Capstone-Uno/src/table.h
+ /home/workspace/CppND-Capstone-Uno/src/user.h
 CMakeFiles/Uno.dir/src/table.cpp.o
  /home/workspace/CppND-Capstone-Uno/src/bot.h
  /home/workspace/CppND-Capstone-Uno/src/card.h
  /home/workspace/CppND-Capstone-Uno/src/player.h
  /home/workspace/CppND-Capstone-Uno/src/table.cpp
  /home/workspace/CppND-Capstone-Uno/src/table.h
+ /home/workspace/CppND-Capstone-Uno/src/user.h
 CMakeFiles/Uno.dir/src/user.cpp.o
+ /home/workspace/CppND-Capstone-Uno/src/bot.h
+ /home/workspace/CppND-Capstone-Uno/src/card.h
+ /home/workspace/CppND-Capstone-Uno/src/player.h
+ /home/workspace/CppND-Capstone-Uno/src/table.h
  /home/workspace/CppND-Capstone-Uno/src/user.cpp
+ /home/workspace/CppND-Capstone-Uno/src/user.h

@@ -35,14 +35,18 @@ color operator++(color& clr);
 
 class Card{
     
-    private:
+    public:
     color _color;
     symbol _symbol;
     color _wish;
-
-    public:
+    bool _done;
+    
     Card();
     Card(color wish, color color, symbol symbol);
+    void printCard();
+    std::string colorAsString();
+    std::string symbolAsString();
+    std::string wishAsString();
 
 };
 

@@ -4,19 +4,23 @@
 #include <vector>
 #include <string>
 
+//Forward declaration
+class Table;
+
 #include "card.h"
-#include "table.h"
 
 class Player{
 
     protected:
-    Player* _leftPlayer;
-    Player* _rightPlayer;
+    void printPlayingCards();
+    std::vector<int> matchingCards(const Card &discardPile);
     std::vector<Card> _playingCards;
-    std::string _name;
 
     public:
-    //virtual void play(Table* table);
+    Player* _leftPlayer;
+    Player* _rightPlayer;
+    virtual void play(Table* table);
+    std::string _name;
 };
 
 

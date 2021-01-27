@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/workspace/CppND-Capstone-Uno/src/bot.cpp
-bot.h
-/home/workspace/CppND-Capstone-Uno/src/bot.h
-
 /home/workspace/CppND-Capstone-Uno/src/bot.h
 string
 -
@@ -20,10 +16,6 @@ card.h
 
 /home/workspace/CppND-Capstone-Uno/src/card.h
 
-/home/workspace/CppND-Capstone-Uno/src/main.cpp
-table.h
-/home/workspace/CppND-Capstone-Uno/src/table.h
-
 /home/workspace/CppND-Capstone-Uno/src/player.h
 vector
 -
@@ -31,8 +23,6 @@ string
 -
 card.h
 /home/workspace/CppND-Capstone-Uno/src/card.h
-table.h
-/home/workspace/CppND-Capstone-Uno/src/table.h
 
 /home/workspace/CppND-Capstone-Uno/src/table.cpp
 iostream
@@ -53,8 +43,20 @@ future
 -
 string
 -
+mutex
+-
+condition_variable
+-
 card.h
 /home/workspace/CppND-Capstone-Uno/src/card.h
 bot.h
 /home/workspace/CppND-Capstone-Uno/src/bot.h
+user.h
+/home/workspace/CppND-Capstone-Uno/src/user.h
+player.h
+/home/workspace/CppND-Capstone-Uno/src/player.h
+
+/home/workspace/CppND-Capstone-Uno/src/user.h
+player.h
+/home/workspace/CppND-Capstone-Uno/src/player.h
 

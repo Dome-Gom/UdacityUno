@@ -6,6 +6,7 @@ CMakeFiles/Uno.dir/src/bot.cpp.o: ../src/bot.h
 CMakeFiles/Uno.dir/src/bot.cpp.o: ../src/card.h
 CMakeFiles/Uno.dir/src/bot.cpp.o: ../src/player.h
 CMakeFiles/Uno.dir/src/bot.cpp.o: ../src/table.h
+CMakeFiles/Uno.dir/src/bot.cpp.o: ../src/user.h
 
 CMakeFiles/Uno.dir/src/card.cpp.o: ../src/card.cpp
 CMakeFiles/Uno.dir/src/card.cpp.o: ../src/card.h
@@ -15,14 +16,26 @@ CMakeFiles/Uno.dir/src/main.cpp.o: ../src/card.h
 CMakeFiles/Uno.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Uno.dir/src/main.cpp.o: ../src/player.h
 CMakeFiles/Uno.dir/src/main.cpp.o: ../src/table.h
+CMakeFiles/Uno.dir/src/main.cpp.o: ../src/user.h
 
+CMakeFiles/Uno.dir/src/player.cpp.o: ../src/bot.h
+CMakeFiles/Uno.dir/src/player.cpp.o: ../src/card.h
 CMakeFiles/Uno.dir/src/player.cpp.o: ../src/player.cpp
+CMakeFiles/Uno.dir/src/player.cpp.o: ../src/player.h
+CMakeFiles/Uno.dir/src/player.cpp.o: ../src/table.h
+CMakeFiles/Uno.dir/src/player.cpp.o: ../src/user.h
 
 CMakeFiles/Uno.dir/src/table.cpp.o: ../src/bot.h
 CMakeFiles/Uno.dir/src/table.cpp.o: ../src/card.h
 CMakeFiles/Uno.dir/src/table.cpp.o: ../src/player.h
 CMakeFiles/Uno.dir/src/table.cpp.o: ../src/table.cpp
 CMakeFiles/Uno.dir/src/table.cpp.o: ../src/table.h
+CMakeFiles/Uno.dir/src/table.cpp.o: ../src/user.h
 
+CMakeFiles/Uno.dir/src/user.cpp.o: ../src/bot.h
+CMakeFiles/Uno.dir/src/user.cpp.o: ../src/card.h
+CMakeFiles/Uno.dir/src/user.cpp.o: ../src/player.h
+CMakeFiles/Uno.dir/src/user.cpp.o: ../src/table.h
 CMakeFiles/Uno.dir/src/user.cpp.o: ../src/user.cpp
+CMakeFiles/Uno.dir/src/user.cpp.o: ../src/user.h
 
