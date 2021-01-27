@@ -12,9 +12,10 @@ class Table;
 class Bot : public Player{
 
     public:
+    //Constructor
     Bot(std::vector<Card> &&playingCards, std::string name);
+    //Function
     void play(Table* table);
-
 };
 
 #endif /*BOT_H_*/

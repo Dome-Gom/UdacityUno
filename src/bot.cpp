@@ -76,11 +76,11 @@ void Bot::play(Table* table){
                 }
                 //Toggel direction in case of direction turn cards
                 if(_playingCards[choosenCard]._symbol == symbol::change){
-                    if(table->directionCCW){
-                        table->directionCCW = false;
+                    if(table->_directionCCW){
+                        table->_directionCCW = false;
                     }
                     else{
-                        table->directionCCW = true;
+                        table->_directionCCW = true;
                     }
                 }
                 //Discard card on discard pile
@@ -94,11 +94,12 @@ void Bot::play(Table* table){
         //If game finished (no cards in _playingCards)
         if(_playingCards.empty()){
             table->_finishedPlayer = this;
-            table->_condPlayerFinished.notify_all();
             gameFinished = true;
+            table->_nextPlayer = nullptr;
+            table->_condPlayerFinished.notify_all();
         }
         else{
-            if(table->directionCCW){
+            if(table->_directionCCW){
                 table->_nextPlayer = _rightPlayer;
             }
             else{

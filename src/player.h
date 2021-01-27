@@ -11,16 +11,20 @@ class Table;
 
 class Player{
 
-    protected:
-    void printPlayingCards();
-    std::vector<int> matchingCards(const Card &discardPile);
-    std::vector<Card> _playingCards;
-
     public:
+    //Function
+    virtual void play(Table* table);
+    //Variable
     Player* _leftPlayer;
     Player* _rightPlayer;
-    virtual void play(Table* table);
     std::string _name;
+
+    protected:
+    //Function
+    void printPlayingCards();
+    std::vector<int> matchingCards(const Card &discardPile);
+    //Variable
+    std::vector<Card> _playingCards;
 };
 
 

@@ -10,14 +10,6 @@ User::User(std::vector<Card> &&playingCards){
     _playingCards = std::move(playingCards);
 }
 
-void User::setName(const std::string &name){
-    _name = name;
-}
-
-std::string User::getName(){
-    return _name;
-}
-
 void User::play(Table* table){
     bool gameFinished = false;
 
@@ -126,11 +118,11 @@ void User::play(Table* table){
                 }
                 //Toggel direction in case of direction turn cards
                 if(_playingCards[userInput]._symbol == symbol::change){
-                    if(table->directionCCW){
-                        table->directionCCW = false;
+                    if(table->_directionCCW){
+                        table->_directionCCW = false;
                     }
                     else{
-                        table->directionCCW = true;
+                        table->_directionCCW = true;
                     }
                 }
                 //Discard card on discard pile
@@ -143,11 +135,12 @@ void User::play(Table* table){
         std::this_thread::sleep_for(std::chrono::seconds(1));
         if(_playingCards.empty()){
             table->_finishedPlayer = this;
-            table->_condPlayerFinished.notify_all();
             gameFinished = true;
+            table->_nextPlayer = nullptr;
+            table->_condPlayerFinished.notify_all();
         }
         else{
-            if(table->directionCCW){
+            if(table->_directionCCW){
                 table->_nextPlayer = _rightPlayer;
             }
             else{

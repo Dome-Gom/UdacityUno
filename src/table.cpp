@@ -11,7 +11,7 @@ Table::Table() : _maxNmbBots(5), _drawPileNumberDecks(4), _nmbStartCards(5){
     _drawPile.pop_back();
     _finishedPlayer = nullptr;
     _nextPlayer = nullptr;
-    directionCCW = true;
+    _directionCCW = true;
 }
 
 void Table::GenerateDrawPile(){
@@ -146,7 +146,7 @@ void Table::RunGame(){
     std::cout << std::endl << "How is your name?" << std::endl;
     std::cout << std::endl << "Name: ";
     std::cin >> userInputString;
-    _user->setName(userInputString);
+    _user->_name = userInputString;
     std::cout << std::endl << "Ok " << userInputString << ". Let the game beginn:" << std::endl << std::endl;;
 
     //Notify player to start
@@ -173,13 +173,16 @@ void Table::RunGame(){
             gameEnd = true;
         }
         else{
+            //Only set _nextPlayer one step bevore _condNextPlayer.notify_all(). 
+            //Otherwise sporadic thread start could start a thread in  parallel.
+            Player* nextPlayer;
             for(auto it = std::begin(_bots); it != std::end(_bots); it++){
                 if((*it).get() == _finishedPlayer){
-                    if(directionCCW){
-                        _nextPlayer = _finishedPlayer->_rightPlayer;
+                    if(_directionCCW){
+                        nextPlayer = _finishedPlayer->_rightPlayer;
                     }
                     else{
-                        _nextPlayer = _finishedPlayer->_leftPlayer;
+                        nextPlayer = _finishedPlayer->_leftPlayer;
                     }
                     _bots.erase(it);
                     break;
@@ -194,6 +197,7 @@ void Table::RunGame(){
             else{
                 setNeighborPlayer();
                 _finishedPlayer = nullptr;
+                _nextPlayer = _nextPlayer;
                 _condNextPlayer.notify_all();
             }
         }

@@ -6,16 +6,13 @@ class Table;
 
 #include "player.h"
 
-
 class User : public Player{
 
     public:
+    //Constructor
     User(std::vector<Card> &&playingCards);
+    //Function
     void play(Table* table);
-
-    //Getter & Setter
-    void setName(const std::string &name);
-    std::string getName();
 };
 
 #endif /*USER_H_*/

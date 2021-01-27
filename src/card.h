@@ -34,20 +34,22 @@ enum class color{
 color operator++(color& clr);
 
 class Card{
-    
+
     public:
-    color _color;
-    symbol _symbol;
-    color _wish;
-    bool _done;
     
+    //Constructor
     Card();
     Card(color wish, color color, symbol symbol);
+    //Function
     void printCard();
     std::string colorAsString();
     std::string symbolAsString();
     std::string wishAsString();
-
+    //Variables
+    color _color;
+    symbol _symbol;
+    color _wish;
+    bool _done;
 };
 
 #endif /*CARD_H_*/
