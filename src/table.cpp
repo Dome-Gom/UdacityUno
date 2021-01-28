@@ -109,6 +109,7 @@ void Table::RunGame(){
     /*Initialze the game*/
     // Ask user number of enemies
     int userInput = -1;
+    std::string userInputStr;
     bool userInputOk = false;
 
     std::cout << "////////////////////////////////////////////////////////////////" << std::endl;
@@ -116,14 +117,24 @@ void Table::RunGame(){
     std::cout << "Welcome to Dominik's UNO. Great that you want to play this game!" << std::endl;
     std::cout << "How many enemies do you want to have (1-" << _maxNmbBots << ")?";
     std::cout << std::endl << std::endl << "Number enemies: ";
-    std::cin >> userInput;
+    std::getline(std::cin, userInputStr);
+    try
+    {
+        userInput = std::stoi(userInputStr);
+    }
+    catch(const std::exception& e){}
     
     //Create Bots according to number request by user
     while (userInput < 1 || userInput > _maxNmbBots)
     {
         std::cout << std::endl;
         std::cout << "Your input was out of range. Please choose a number between 1 and " << _maxNmbBots << "." << std::endl << std::endl << "Number enemies: ";
-        std::cin >> userInput;
+        std::getline(std::cin, userInputStr);
+        try
+        {
+            userInput = std::stoi(userInputStr);
+        }
+        catch(const std::exception& e){}
     } 
     
     _nmbBots = userInput;

@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/workspace/CppND-Capstone-Uno/src/bot.cpp
-iostream
--
-bot.h
-/home/workspace/CppND-Capstone-Uno/src/bot.h
-table.h
-/home/workspace/CppND-Capstone-Uno/src/table.h
-
 /home/workspace/CppND-Capstone-Uno/src/bot.h
 string
 -
@@ -63,18 +55,6 @@ user.h
 /home/workspace/CppND-Capstone-Uno/src/user.h
 player.h
 /home/workspace/CppND-Capstone-Uno/src/player.h
-
-/home/workspace/CppND-Capstone-Uno/src/user.cpp
-iostream
--
-algorithm
--
-vector
--
-user.h
-/home/workspace/CppND-Capstone-Uno/src/user.h
-table.h
-/home/workspace/CppND-Capstone-Uno/src/table.h
 
 /home/workspace/CppND-Capstone-Uno/src/user.h
 player.h
